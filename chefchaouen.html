@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Mountain Travel</title>
+  <link rel="stylesheet" href="chefchaouen.css">
+</head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #1f1f1f;
+    color: white;
+  }
+  
+  .hero {
+    height: 90vh;
+    background: url('header.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin: 10px 0;
+  }
+  
+  .hero .logo {
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  .content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+  
+  .section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .section img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .text-box {
+    width: 50%;
+  }
+  
+  .text-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .text-box p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #517A6F;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  </style>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h3>MOUNTAIN TRAVEL EXPERTS</h3>
+      <h1>Your Mountain Travel</h1>
+      <p class="logo">Outdoor ADVENTURE<br>Canada</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <img src="src/carousel1.jpg" alt="Mountain night">
+      <div class="text-box">
+        <h2>All You Need to Know</h2>
+        <p>Yes, we groom our Mountain Travel Experts. Our team of 70+ ski professionals lives and breathes mountain culture.</p>
+        <a href="#" class="btn">READ MORE</a>
+      </div>
+    </section>
+
+    <section class="section reverse">
+      <div class="text-box">
+        <h2>Italy, Territory of Peaks and Pinnacles</h2>
+        <p>Italy boasts a large number of evocative mountain locales for any season. From north to south, it offers a wide range of landscapes.</p>
+        <a href="#" class="btn">READ MORE</a>
+      </div>
+      <img src="src/carousel2.jpg" alt="Italian mountains">
+    </section>
+
+    <section class="section">
+      <img src="src/carousel3.jpg" alt="Night landscape">
+      <div class="text-box">
+        <h2>The Exchanges</h2>
+        <p>MTS is the single largest and longest-running annual gathering of mountain travel professionals in the world.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

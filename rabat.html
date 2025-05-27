@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mountain Travel</title>
+  <link href="src/card1.jpg" rel="stylesheet">
+  <style>
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff7f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: url('images/marrakech-banner.jpg') no-repeat center/cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffe3c4;
+    padding: 10px;
+  }
+  
+  .tab {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff8c42;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .tab:hover,
+  .tab.active {
+    background: #e75c1d;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h3>MOUNTAIN TRAVEL EXPERTS</h3>
+    <h1>Your Mountain Travel</h1>
+    <p>Adventure Canada</p>
+  </header>
+
+  <section class="section">
+    <div class="content-block">
+      <img src="src/Chefchaouen.jpeg" alt="Mountain Night" />
+      <div class="text">
+        <h2>All You Need to Know</h2>
+        <p>Yes, we are your Mountain Travel Experts. What does that mean? Our team of 20 travel professionals made up of skiers and snowboarders who live and breathe mountain culture...</p>
+        <a href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="text">
+        <h2>Italy, Territory of Peaks and Pinnacles</h2>
+        <p>Italy boasts a large number of beautiful, snow-capped mountains. From ski resorts to unique cultural traditions, explore this majestic destination with us.</p>
+        <a href="#">READ MORE</a>
+      </div>
+      <img src="src/carousel3.jpg" alt="Italy Mountains" />
+    </div>
+
+    <div class="content-block">
+      <img src="src/casa.jpeg" alt="Exchange" />
+      <div class="text">
+        <h2>The Exchanges</h2>
+        <p>Mountain Travel Symposium is the single largest and longest-running annual gathering of mountain travel professionals in the world...</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // JS functionality can go here if needed
+  </script>
+</body>
+</html>
